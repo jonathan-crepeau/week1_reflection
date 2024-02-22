@@ -4,41 +4,25 @@
 }
 
 body {
-  background-color: paleturquoise;
-  height: 100vh;
-}
-
-header {
-  height: 10%;
-  background-color: white;
-}
-
-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#links {
-  margin-right: 50px;
   display: flex;
   flex-flow: column nowrap;
-
+  height: 100%
 }
 
-img {
-  width: 100px;
+nav, footer {
+  background-color: lightblue;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 50px;
 }
+
 main {
-  height: 80%
+  flex-grow: 0;
+  background-color: peachpuff;
+  min-height: calc(100vh - 100px)
 }
 
-footer {
-  background-color: white;
-  height: 10%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+p {
+  margin-bottom: 20px;
+  /* outline: 2px red solid */
 }
